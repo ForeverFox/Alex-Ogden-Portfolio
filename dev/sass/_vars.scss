@@ -1,0 +1,19 @@
+/* MEDIA QUERIES */
+$large-mobile-width: "screen and (min-width: 410px)";
+$tablet-width: "screen and (min-width: 768px)";
+$laptop-width: "screen and (min-width: 1024px)";
+$desktop-width: "screen and (min-width: 1366px)";
+$fullscreen-width: "screen and (min-width: 1680px)";
+
+
+/* CONTAINERS */
+.centered-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*COLORS*/
+$red: #d52b1e;
+$aqua: #00ced1;
