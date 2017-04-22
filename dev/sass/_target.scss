@@ -1,0 +1,44 @@
+.about-content, .works-content, .connect-content {
+	display: none;
+	visibility: hidden;
+}
+
+.about-content:target {
+	display: grid;
+	visibility: visible;
+	height: auto;
+	padding: 1rem;
+		
+		@include tablet {
+			height: 100vh;
+		}
+		
+		@include laptop {
+			height: 100vh;
+		}
+}
+
+.works-content:target, .connect-content:target {
+	display: grid;
+	height: 100vh;
+	visibility: visible;
+	padding: 1rem;
+}
+
+.about-content:target {
+	background-image: url(../img/about.jpg);
+	background-size: cover;
+}
+
+.works-content:target {
+	background-image: url(../img/works.jpg);
+	background-size: cover;
+}
+
+.connect-content:target {
+	background-image: url(../img/connect.jpg);
+	background-size: cover;
+}
+
+
+

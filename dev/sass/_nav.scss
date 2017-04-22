@@ -14,13 +14,15 @@
 	position: relative;
 		
 		label {
-		  color: #000;
+		  color: $skyblue;
 		  display: block;
 		  font-size: 1.25rem;
 		  position: absolute;
 		  left: 0.5rem;
 		  top: 0;
-		  text-align: right;	  
+		  text-align: right;
+		  width: 32px;
+		  height: 32px;		  
 		}
 			
 			@include laptop {
@@ -29,34 +31,34 @@
 			}	
 }
 
-.check {
-	position: absolute;
-	top: 0;
-	right: 1rem;
-}
-
 .mobile-menu {
-    background-color: #fff;
-    max-height: 640px;
-    left: -50%;
+    background-image: url(../img/nav.jpg);
+    height: 180px;
+    left: -100%;
     line-height: 2.618rem;
-    padding: 1.618rem;
     position: absolute;
     top: 0;
-    width: 50%;
+    width: 100%;
 	z-index: 1000;
+	text-align: center;
+	
+		@include tablet {
+			height: 40px;
+			text-align: center;
+			background-color: #fff;
+		}
 	
 	li {
 		font-family: "Poppins", sans-serif;
 		font-weight: 500;
 		font-size: 1.25rem;
-		padding: 0.5rem;
+		display: block;
+		
+			@include tablet {
+				display: inline-block;
+				padding: 0 1.618rem;
+			}
 	}
-	
-		@include tablet {
-			left: -25%;
-			width: 25%;
-		}
 }
 
 .menu-controller-label .fa-bars{
@@ -85,10 +87,10 @@
 	left: 0;
 	
 		@include laptop {
-			bottom: 24%;
+			bottom: 18%;
 		}
 		
 		@include fullscreen {
-			bottom: 27%;
+			bottom: 23%;
 		}
 }

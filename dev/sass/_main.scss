@@ -6,7 +6,9 @@ html {
 body {
 	position: relative;
 	max-width: 100%;
-	color: $red;
+	color: #1b1b1b;
+	background-image: url(../img/side-b.jpg);
+	background-size: cover;
 }
 
 /*IMAGE PRELOADING*/
@@ -28,13 +30,8 @@ body {
 }
 
 .content {
-	position: relative;
 	width: 100%;
-	padding: 1em;
-}
-
-.container {
-	
+	padding: 1rem;
 }
 
 /*HEADER*/
@@ -78,4 +75,18 @@ body {
 
 .footer p {
 	padding: 1em;
+}
+
+/*ITEMS*/
+.image {
+	width: 300px;
+	height: auto;
+	
+		@include laptop {
+			width: 600px;
+		}
+}
+
+.image img {
+	max-width: 100%;
 }

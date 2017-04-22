@@ -2,11 +2,15 @@
 
 /*GLOBALS*/
 h1 {
-	font-size: 2.618em;
+	font-size: 3.25em;
 	line-height: 1.2;
 	font-weight: 300;
 	color: #fff;
 	letter-spacing: 0.75rem; 
+		
+		@include large-mobile {
+			font-size: 3.5em;
+		}
 		
 		@include tablet {
 			font-size: 3em;
@@ -22,7 +26,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.25em; 
+	font-size: 2.25em;	
 }
 
 h3 {
@@ -50,7 +54,8 @@ label {
 
 h2, h3 {
 	font-weight: 500;
-	letter-spacing: 0.25rem; 
+	letter-spacing: 0.25rem;
+	margin-bottom: 1.618rem;	
 }
 
 h4, h5 {
@@ -64,6 +69,11 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	line-height: 1.8; 
+	margin-bottom: 1.25em;
+	
+		@include fullscreen {
+			font-size: 1.25em;
+		}
 }
 
 ul {
@@ -77,22 +87,6 @@ li {
 
 a {
 	text-decoration: none; 
-}
-
-a:link {
-	color: #008a3e; 
-}
-
-a:visited {
-	color: #1b1b1b; 
-}
-
-a:hover {
-	color: #0089ce; 
-}
-
-a:active {
-	color: #ff6c8f; 
 }
 
 label .fa-bars {
@@ -133,6 +127,32 @@ label .fa-bars {
 .side-a a:hover {
 	color: #fff;
 }
+
+.heading {
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: center;
+	padding: 1rem 0.5rem;
+	color: $skyblue;
+	margin: 0;
+}
+
+.content-grid p {
+	font-size: 1.25em;
+	padding: 1rem 0 0 2.618rem;
+	
+		@include large-mobile {
+			padding: 1rem 0 0 3rem;
+		}
+}
+
+.content-grid h3 {
+	text-align: center;
+}
+
+
+
+
 
 /*GLITCH EFFECT*/
 .glitch {
