@@ -81,8 +81,23 @@ body {
 .image {
 	width: 300px;
 	height: auto;
-	
+		@include tablet {
+			width: 400px;
+		}
+		
 		@include laptop {
+			width: 300px;
+		}
+		
+		@include desktop {
+			width: 400px;
+		}
+		
+		@include fullscreen {
+			width: 500px;
+		}
+		
+		@include large-display {
 			width: 600px;
 		}
 }

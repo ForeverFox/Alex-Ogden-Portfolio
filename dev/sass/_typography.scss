@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Open+Sans|Nunito:600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Open+Sans");
 
 /*GLOBALS*/
 h1 {
@@ -13,11 +13,11 @@ h1 {
 		}
 		
 		@include tablet {
-			font-size: 3em;
+			font-size: 3.618em;
 		}
 		
 		@include laptop {
-			font-size: 2em;
+			font-size: 2.618em;
 		}
 		
 		@include desktop {
@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, li {
 }
 
 label {
-	font-family: Nunito, sans-serif;
 	font-weight: 600;
 }
 
@@ -129,12 +128,21 @@ label .fa-bars {
 }
 
 .heading {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 400;
 	text-align: center;
-	padding: 1rem 0.5rem;
+	padding:  1rem 0.5rem;
 	color: $skyblue;
 	margin: 0;
+	
+		@include tablet {
+			font-size: 1.25em;
+			padding-left: 1rem;
+		}
+		
+		@include laptop {
+			font-size: 1em;
+		}
 }
 
 .content-grid p {
@@ -143,6 +151,14 @@ label .fa-bars {
 	
 		@include large-mobile {
 			padding: 1rem 0 0 3rem;
+		}
+		
+		@include tablet {
+			font-size: 1.5em;
+		}
+		
+		@include laptop {
+			font-size: 1.15em;
 		}
 }
 
