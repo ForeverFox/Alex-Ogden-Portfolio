@@ -151,8 +151,9 @@ label .fa-bars {
 }
 
 .content-grid p {
-	font-size: 1.25em;
-	padding: 1rem 0 0 1.618rem;
+	font-size: 1.15em;
+	padding: 1rem 0 0 1.618rem;	
+
 		
 		@include tablet {
 			font-size: 1.5rem;

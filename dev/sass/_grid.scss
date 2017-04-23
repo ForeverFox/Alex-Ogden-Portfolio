@@ -3,9 +3,7 @@
 	display: grid;
 	width: 100%;
 	grid-template-columns: 100%;
-	grid-template-rows: 40px 50% 50%40px;
-	grid-template-areas:
-	"vertical-nav side-a side-b";
+	grid-template-rows: 40px 50% 50% 40px;
 		
 		@include laptop {
 			grid-template-columns: 40px 48% auto 40px;
@@ -22,7 +20,6 @@
 
 .side-a {
 	position: relative;
-	grid-area: side-a;
 	grid-column-start: 1;
 	grid-row-start: 2;
 	height: 50vh;
@@ -44,10 +41,10 @@
 }
 
 .side-b {
+	display: grid;
 	position: relative;
-	grid-area: side-b;
-	grid-row-start: 3;
-	grid-column-start: 1;
+	grid-column-start: 1;grid-row-start: 3;
+	grid-row-end: 5;
 	background-image: url(../img/side-b.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -61,7 +58,6 @@
 			background-repeat: no-repeat;
 		}
 }
-
 
 /*HEADING*/
 .heading {
@@ -152,7 +148,7 @@
 	z-index: 3;
 	grid-column-start: 1;
 	grid-column-end: 11;
-	grid-row-start: 2;
+	grid-row-start: 1;
 	grid-row-end: 8;
 	
 		@include tablet {
@@ -185,12 +181,12 @@
 	width: 100%;
 	grid-column-start: 4;
 	grid-column-end: auto;
- 	grid-row-start: 9;
+ 	grid-row-start: 7;
 	grid-row-end: auto;
 	z-index: 2;
 		
 		@include large-mobile {
-			grid-column-start: 6;
+			grid-column-start: 5;
 			grid-row-start: 7;
 		}
 		
@@ -231,13 +227,13 @@
 	z-index: 2;
 		
 		@include large-mobile {
-			grid-column-start: 3;
+			grid-column-start: 2;
 			grid-row-start: 7;
 		}
 		
 		@include tablet {
-			grid-column-start: 5;
-			grid-row-start: 5;
+			grid-column-start: 4;
+			grid-row-start: 6;
 		}
 		
 		@include laptop {
@@ -272,8 +268,8 @@
 	z-index: 2;
 		
 		@include large-mobile {
-			grid-column-start: 3;
-			grid-row-start: 7;
+			grid-column-start: 2;
+			grid-row-start: 6;
 		}
 		
 		@include tablet {
@@ -310,18 +306,15 @@
 	margin: 0 auto;
 	padding: 1.618rem;
 	z-index: 3;
-	grid-column-start: 3;
+	grid-column-start: 2;
 	grid-column-end: auto;
 	grid-row-start: 1;
 	grid-row-end: auto;
-	
-		@include large-mobile {
-			grid-column-start: 2;
-		}
+
 		
 		@include tablet {
-			grid-column-start: 3;
-			grid-row-start: 2;
+			grid-column-start: 2;
+			grid-row-start: 1;
 		}
 		
 		@include laptop {
@@ -332,8 +325,8 @@
 		}
 		
 		@include desktop {
-			grid-column-start: 4;
-			grid-row-start: 1;
+			grid-column-start: 2;
+			grid-row-start: 2;
 			padding: 0;
 		}
 		
@@ -346,10 +339,14 @@
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 100px 100px 100px;
+	grid-template-columns: 100px 100px;
 	grid-template-rows: 100px 100px 100px;
 	grid-template-areas:
 	"box-1 box-2 box-3";
+		
+		@include large-mobile {
+			grid-template-columns: 100px 100px 100px;
+		}
 	
 		@include tablet {
 			grid-template-columns: 150px 150px 150px;
@@ -414,7 +411,6 @@
 		@include laptop {
 			display: block;
 			visibility: visible;
-			grid-area: vertical-nav;
 			grid-column: 1 / auto;
 			background-image: url(../img/nav.jpg);		height: 100vh;
 		}

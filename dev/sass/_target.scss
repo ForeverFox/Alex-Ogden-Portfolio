@@ -6,14 +6,19 @@
 .about-content:target, .works-content:target, .connect-content:target  {
 	display: grid;
 	visibility: visible;
-	background-color: $soft-white; 
+	background-color: $soft-white;
 }
 
 .about-content:target {
 	background-image: url(../img/about.jpg);
 	background-size: cover;
+	height: 120vh;
 	
 		@include large-mobile {
+			height: 120vh;
+		}
+		
+		@include tablet {
 			height: 100vh;
 		}
 }
@@ -21,17 +26,28 @@
 .works-content:target {
 	background-image: url(../img/works.jpg);
 	background-size: cover;
+	height: 100vh;
 	
-		@include laptop {
+		@include large-mobile {
+			height: 120vh;
+		}
+		
+		@include tablet {
 			height: 100vh;
 		}
+	
 }
 
 .connect-content:target {
 	background-image: url(../img/connect.jpg);
 	background-size: cover;
+	height: 100vh;
 	
-		@include laptop {
+		@include large-mobile {
+			height: 120vh;
+		}
+		
+		@include tablet {
 			height: 100vh;
 		}
 }
