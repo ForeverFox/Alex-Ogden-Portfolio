@@ -86,6 +86,7 @@ li {
 
 a {
 	text-decoration: none; 
+	color: $soft-black;
 }
 
 label .fa-bars {
@@ -147,27 +148,20 @@ label .fa-bars {
 
 .content-grid p {
 	font-size: 1.25em;
-	padding: 1rem 0 0 2.618rem;
-	
-		@include large-mobile {
-			padding: 1rem 0 0 3rem;
-		}
+	padding: 1rem 0 0 1.618rem;
 		
 		@include tablet {
-			font-size: 1.5em;
+			font-size: 1.5rem;
 		}
 		
 		@include laptop {
-			font-size: 1.15em;
+			font-size: 1rem;
+		}
+		
+		@include desktop {
+			font-size: 1.414rem;
 		}
 }
-
-.content-grid h3 {
-	text-align: center;
-}
-
-
-
 
 
 /*GLITCH EFFECT*/

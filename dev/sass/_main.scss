@@ -6,7 +6,7 @@ html {
 body {
 	position: relative;
 	max-width: 100%;
-	color: #1b1b1b;
+	color: $soft-black;
 	background-image: url(../img/side-b.jpg);
 	background-size: cover;
 }
@@ -78,11 +78,12 @@ body {
 }
 
 /*ITEMS*/
-.image {
-	width: 300px;
+.image-1 {
+	width: 200px;
 	height: auto;
+	
 		@include tablet {
-			width: 400px;
+			width: 380px;
 		}
 		
 		@include laptop {
@@ -90,11 +91,81 @@ body {
 		}
 		
 		@include desktop {
+			width: 325px;
+		}
+		
+		@include fullscreen {
+			width: 420px;
+		}
+		
+		@include large-display {
+			width: 480px;
+		}
+}
+
+.image-2 {
+	width: 260px;
+	height: auto;
+	margin-left: -40px;
+		
+		@include large-mobile {
+			width: 300px;
+			margin-left: -100px;
+		}
+	
+		@include tablet {
+			width: 450px;
+			padding-top: 2.618rem;
+		}
+		
+		@include laptop {
+			width: 320px;
+			margin-left: -20px;
+		}
+		
+		@include desktop {
 			width: 400px;
 		}
 		
 		@include fullscreen {
-			width: 500px;
+			width: 600px;
+			margin-left: -120px;
+			margin-top: -60px;
+		}
+		
+		@include large-display {
+			width: 640px;
+		}
+}
+
+.image-3 {
+	width: 260px;
+	height: auto;
+	margin-left: -60px;
+	
+		@include large-mobile {
+			width: 300px;
+			margin-left: -100px;
+		}
+	
+		@include tablet {
+			width: 420px;
+			margin-left: -100px;
+			padding-top: 3.618rem;
+		}
+		
+		@include laptop {
+			width: 300px;
+		}
+		
+		@include desktop {
+			width: 350px;
+		}
+		
+		@include fullscreen {
+			width: 550px;
+			margin-left: -120px;
+			margin-top: -60px;
 		}
 		
 		@include large-display {
@@ -102,6 +173,6 @@ body {
 		}
 }
 
-.image img {
+.image-1 img, .image-2 img, .image-3 img {
 	max-width: 100%;
 }

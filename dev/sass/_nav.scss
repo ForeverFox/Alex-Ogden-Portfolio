@@ -94,3 +94,119 @@
 			bottom: 23%;
 		}
 }
+
+/*SOCIAL NAVIGATION*/
+.social-nav ul {
+	
+	@include large-mobile {
+		margin-left: 1rem;
+	}
+	
+	@include tablet {
+		margin: 0;
+	}
+	
+	@include laptop {
+		margin-left: 0.618rem;
+	}
+	
+	@include large-display {
+		margin-left: 0;
+	}
+}
+
+.social-nav li {
+  display: inline-block;
+  font-size: 1.618rem;
+  padding: 1rem;
+  
+	@include large-mobile {
+		font-size: 2em;
+		padding: 1.618rem;
+	}
+  
+	@include tablet {
+		font-size: 2.618rem;
+		margin-top: -3.618rem;
+		padding: 3.25rem;
+	}
+
+	@include laptop {
+		font-size: 1.618rem;
+		margin-top: -200px;
+		padding: 2rem;
+	}
+	
+	@include desktop {
+		font-size: 2rem;
+		padding: 2.618rem;
+	}
+	
+	@include fullscreen {
+		font-size: 2.25rem;
+		margin-left: 1.618rem;
+	}
+	
+	@include large-display {
+		font-size: 2.618rem;
+		padding: 3.618rem;
+	}
+}
+
+.social-nav a {
+	color: $soft-black;
+}
+
+.social-nav a:hover {
+	color: $aqua;
+}
+
+
+/*WORKS NAV*/
+.works-nav {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.works-nav h3 {
+	font-size: 1em;
+	letter-spacing: 0.618rem;
+	
+		@include laptop {
+			font-size: 1rem;
+		}
+			
+		@include desktop {
+			font-size: 1.25rem;
+		}
+		
+		@include fullscreen {
+			font-size: 1.618rem;
+		}
+		
+		@include large-display {
+			font-size: 1.25rem;
+			letter-spacing: 0.5rem;
+		}
+}
+
+.works-nav li {
+	display: inline-block;
+	padding: 0 0.25rem;
+	
+		@include fullscreen {
+			padding: 0 0.618rem;
+		}
+		
+		@include large-display {
+			padding: 0 1.618rem 0 0;
+		}
+}
+
+.works-nav a {
+	color: #000;
+}
+
+.works-nav a:hover {
+	color: $aqua;
+}

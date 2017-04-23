@@ -3,41 +3,36 @@
 	visibility: hidden;
 }
 
-.about-content:target {
+.about-content:target, .works-content:target, .connect-content:target  {
 	display: grid;
 	visibility: visible;
-	height: auto;
-	padding: 1rem;
-		
-		@include tablet {
-			height: 100vh;
-		}
-		
-		@include laptop {
-			height: 100vh;
-		}
-}
-
-.works-content:target, .connect-content:target {
-	display: grid;
-	height: 100vh;
-	visibility: visible;
-	padding: 1rem;
 }
 
 .about-content:target {
 	background-image: url(../img/about.jpg);
 	background-size: cover;
+	
+		@include large-mobile {
+			height: 100vh;
+		}
 }
 
 .works-content:target {
 	background-image: url(../img/works.jpg);
 	background-size: cover;
+	
+		@include tablet {
+			height: 100vh;
+		}
 }
 
 .connect-content:target {
 	background-image: url(../img/connect.jpg);
 	background-size: cover;
+	
+		@include tablet {
+			height: 100vh;
+		}
 }
 
 
