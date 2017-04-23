@@ -6,6 +6,7 @@
 .about-content:target, .works-content:target, .connect-content:target  {
 	display: grid;
 	visibility: visible;
+	background-color: $soft-white; 
 }
 
 .about-content:target {
@@ -20,14 +21,19 @@
 .works-content:target {
 	background-image: url(../img/works.jpg);
 	background-size: cover;
-	height: 100vh;
-
+	
+		@include laptop {
+			height: 100vh;
+		}
 }
 
 .connect-content:target {
 	background-image: url(../img/connect.jpg);
 	background-size: cover;
-	height: 100vh;
+	
+		@include laptop {
+			height: 100vh;
+		}
 }
 
 
