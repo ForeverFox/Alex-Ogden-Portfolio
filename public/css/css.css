@@ -23,6 +23,9 @@ body {
 #preload {
   background-image: url(../img/side-a.jpg);
   background-image: url(../img/side-b.jpg);
+  background-image: url(../img/about.jpg);
+  background-image: url(../img/works.jpg);
+  background-image: url(../img/connect.jpg);
   width: 0px;
   height: 0px;
   display: inline; }
@@ -153,6 +156,9 @@ body {
 
 .image-1 img, .image-2 img, .image-3 img {
   max-width: 100%; }
+
+.animation {
+  width: 300px; }
 
 /*MOBILE NAV */
 .menu-controller-checkbox {
@@ -435,6 +441,9 @@ label .fa-bars {
   @media screen and (min-width: 1024px) {
     .heading {
       font-size: 1em; } }
+  @media screen and (min-width: 1920px) {
+    .heading {
+      font-size: 1.618rem; } }
 
 .content-grid p {
   font-size: 1.25em;
@@ -448,6 +457,9 @@ label .fa-bars {
   @media screen and (min-width: 1366px) {
     .content-grid p {
       font-size: 1.414rem; } }
+  @media screen and (min-width: 1920px) {
+    .content-grid p {
+      font-size: 1.25rem; } }
 
 /*GLITCH EFFECT*/
 .glitch:before, .glitch:after {
@@ -551,6 +563,7 @@ label .fa-bars {
 
 .side-b {
   position: relative;
+  height: 100vh;
   grid-area: side-b;
   grid-row: 3;
   grid-column: 1;
@@ -559,7 +572,6 @@ label .fa-bars {
   background-size: cover; }
   @media screen and (min-width: 1024px) {
     .side-b {
-      height: 100vh;
       grid-column-start: 3;
       grid-row-start: 1;
       background-image: url(../img/side-b.jpg);
@@ -680,8 +692,7 @@ label .fa-bars {
   grid-column-end: auto;
   grid-row-start: 9;
   grid-row-end: auto;
-  z-index: 2;
-  justify-self: end; }
+  z-index: 2; }
   @media screen and (min-width: 410px) {
     .image-grid {
       grid-column-start: 6;
@@ -771,16 +782,12 @@ label .fa-bars {
 
 .works-content:target {
   background-image: url(../img/works.jpg);
-  background-size: cover; }
-  @media screen and (min-width: 768px) {
-    .works-content:target {
-      height: 100vh; } }
+  background-size: cover;
+  height: 100vh; }
 
 .connect-content:target {
   background-image: url(../img/connect.jpg);
-  background-size: cover; }
-  @media screen and (min-width: 768px) {
-    .connect-content:target {
-      height: 100vh; } }
+  background-size: cover;
+  height: 100vh; }
 
 /*# sourceMappingURL=css.css.map */

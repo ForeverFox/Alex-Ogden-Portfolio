@@ -20,19 +20,14 @@
 .works-content:target {
 	background-image: url(../img/works.jpg);
 	background-size: cover;
-	
-		@include tablet {
-			height: 100vh;
-		}
+	height: 100vh;
+
 }
 
 .connect-content:target {
 	background-image: url(../img/connect.jpg);
 	background-size: cover;
-	
-		@include tablet {
-			height: 100vh;
-		}
+	height: 100vh;
 }
 
 

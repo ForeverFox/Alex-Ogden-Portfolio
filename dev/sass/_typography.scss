@@ -144,6 +144,10 @@ label .fa-bars {
 		@include laptop {
 			font-size: 1em;
 		}
+		
+		@include large-display {
+			font-size: 1.618rem;
+		}
 }
 
 .content-grid p {
@@ -160,6 +164,10 @@ label .fa-bars {
 		
 		@include desktop {
 			font-size: 1.414rem;
+		}
+		
+		@include large-display {
+			font-size: 1.25rem;
 		}
 }
 

@@ -15,6 +15,9 @@ body {
 #preload {
 	background-image: url(../img/side-a.jpg);
 	background-image: url(../img/side-b.jpg);
+	background-image: url(../img/about.jpg);
+	background-image: url(../img/works.jpg);
+	background-image: url(../img/connect.jpg);
 	width: 0px;
 	height: 0px;
 	display: inline; 
@@ -175,4 +178,8 @@ body {
 
 .image-1 img, .image-2 img, .image-3 img {
 	max-width: 100%;
+}
+
+.animation {
+	width: 300px;
 }

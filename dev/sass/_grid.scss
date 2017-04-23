@@ -45,6 +45,7 @@
 
 .side-b {
 	position: relative;
+	height: 100vh;
 	grid-area: side-b;
 	grid-row: 3;
 	grid-column: 1;
@@ -53,7 +54,6 @@
 	background-size: cover;
 	
 		@include laptop {
-			height: 100vh;
 			grid-column-start: 3;
 			grid-row-start: 1;
 			background-image: url(../img/side-b.jpg);
@@ -194,7 +194,6 @@
  	grid-row-start: 9;
 	grid-row-end: auto;
 	z-index: 2;
-	justify-self: end;
 		
 		@include large-mobile {
 			grid-column-start: 6;
