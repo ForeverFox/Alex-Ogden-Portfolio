@@ -164,7 +164,7 @@
 		}
 		
 		@include desktop {
-			grid-column-start: 3;
+			grid-column-start: 2;
 			grid-column-end: 10;
 		}
 		
@@ -187,7 +187,7 @@
 		
 		@include large-mobile {
 			grid-column-start: 5;
-			grid-row-start: 7;
+			grid-row-start: 6;
 		}
 		
 		@include tablet {
@@ -197,7 +197,7 @@
 		
 		@include laptop {
 			grid-column-start: 4;
-			grid-row-start: 6;
+			grid-row-start: 5;
 		}
 
 		@include desktop {
@@ -222,18 +222,18 @@
 	width: 100%;
 	grid-column-start: 2;
 	grid-column-end: auto;
- 	grid-row-start: 7;
+ 	grid-row-start: 8;
 	grid-row-end: auto;
 	z-index: 2;
 		
 		@include large-mobile {
 			grid-column-start: 2;
-			grid-row-start: 7;
+			grid-row-start: 8;
 		}
 		
 		@include tablet {
 			grid-column-start: 4;
-			grid-row-start: 6;
+			grid-row-start: 7;
 		}
 		
 		@include laptop {
@@ -298,78 +298,6 @@
 		}
 }
 
-/*WORKS NAV*/
-.content-grid-works {
-	grid-area: content-grid;
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	padding: 1.618rem;
-	z-index: 3;
-	grid-column-start: 2;
-	grid-column-end: auto;
-	grid-row-start: 1;
-	grid-row-end: auto;
-
-		
-		@include tablet {
-			grid-column-start: 2;
-			grid-row-start: 1;
-		}
-		
-		@include laptop {
-			grid-column-start: 3;
-			grid-column-end: 6;
-			grid-row-start: 2;
-			padding: 0;
-		}
-		
-		@include desktop {
-			grid-column-start: 2;
-			grid-row-start: 2;
-			padding: 0;
-		}
-		
-		@include large-display {
-			grid-column-start: 3;
-		}
-}
-
-.works-nav {
-	width: 100%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 100px 100px;
-	grid-template-rows: 100px 100px 100px;
-	grid-template-areas:
-	"box-1 box-2 box-3";
-		
-		@include large-mobile {
-			grid-template-columns: 100px 100px 100px;
-		}
-	
-		@include tablet {
-			grid-template-columns: 150px 150px 150px;
-			grid-template-rows: 150px 150px 150px;
-		}
-		
-		@include laptop {
-			grid-template-columns: 100px 100px 100px;
-			grid-template-rows: 100px 100px 100px;
-		}
-		
-		@include desktop {
-			grid-template-columns: 125px 125px 125px;
-			grid-template-rows: 125px 125px 125px;
-		}
-		
-		@include fullscreen {
-			grid-template-columns: 150px 150px 150px;
-			grid-template-rows: 150px 150px 150px;
-		}
-}
-
-
 /*CONNECT-NAV*/
 .content-grid-connect {
 	grid-area: content-grid;
@@ -380,7 +308,7 @@
 	z-index: 3;
 	grid-column-start: 2;
 	grid-column-end: 12;
-	grid-row-start: 2;
+	grid-row-start: 1;
 	
 		@include large-mobile {
 			grid-column-start: 2;
