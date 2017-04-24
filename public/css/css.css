@@ -494,7 +494,7 @@ label .fa-bars {
   width: 100%; }
 
 .project-content p a:link, .project-content p a:visited {
-  color: #fff000;
+  color: #ee5a35;
   font-weight: 500; }
 
 .project-content a:hover {
@@ -887,9 +887,7 @@ label .fa-bars {
     .project-side-b {
       grid-column-start: 3;
       grid-column-end: 5;
-      grid-row-start: 1;
-      background-image: url(../img/side-b.jpg);
-      background-repeat: no-repeat; } }
+      grid-row-start: 1; } }
 
 .about-content, .works-content, .connect-content {
   display: none;
@@ -935,7 +933,7 @@ label .fa-bars {
   display: block;
   width: 100%;
   overflow: auto;
-  background-image: url(../img/project-side-a.jpg);
+  background-image: url(../img/project-side-b.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
   @media screen and (min-width: 1024px) {

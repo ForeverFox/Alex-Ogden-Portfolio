@@ -373,13 +373,11 @@
 	position: relative;
 	grid-column-start: 1;grid-row-start: 3;
 	grid-row-end: 5;
-
 	
 		@include laptop {
 			grid-column-start: 3;
 			grid-column-end: 5;
 			grid-row-start: 1;
-			background-image: url(../img/side-b.jpg);
-			background-repeat: no-repeat;
+			
 		}
 }
