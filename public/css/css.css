@@ -882,7 +882,10 @@ label .fa-bars {
   position: relative;
   grid-column-start: 1;
   grid-row-start: 3;
-  grid-row-end: 5; }
+  grid-row-end: 5;
+  background-image: url(../img/side-b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media screen and (min-width: 1024px) {
     .project-side-b {
       grid-column-start: 3;
@@ -925,10 +928,10 @@ label .fa-bars {
       height: 100vh; } }
 
 /*PROJECTS*/
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8 {
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8, .project-9 {
   display: none; }
 
-.project-1:target, .project-2:target, .project-3:target, .project-4:target, .project-5:target, .project-6:target, .project-7:target, .project-8:target {
+.project-1:target, .project-2:target, .project-3:target, .project-4:target, .project-5:target, .project-6:target, .project-7:target, .project-8:target, .project-9:target {
   position: relative;
   display: block;
   width: 100%;
@@ -937,7 +940,7 @@ label .fa-bars {
   background-repeat: no-repeat;
   background-size: cover; }
   @media screen and (min-width: 1024px) {
-    .project-1:target, .project-2:target, .project-3:target, .project-4:target, .project-5:target, .project-6:target, .project-7:target, .project-8:target {
+    .project-1:target, .project-2:target, .project-3:target, .project-4:target, .project-5:target, .project-6:target, .project-7:target, .project-8:target, .project-9:target {
       height: 100vh; } }
 
 /*# sourceMappingURL=css.css.map */
