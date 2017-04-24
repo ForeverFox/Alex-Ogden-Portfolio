@@ -373,6 +373,7 @@
 	position: relative;
 	grid-column-start: 1;grid-row-start: 3;
 	grid-row-end: 5;
+
 	
 		@include laptop {
 			grid-column-start: 3;
