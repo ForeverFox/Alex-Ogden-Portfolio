@@ -73,9 +73,10 @@ body {
 		}
 }
 
-.figure {
+.figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
+	position: relative;
 	width: 280px;
-	height: auto;
+	height: 280px;
 	margin: auto;
 	padding: 8px;
 		
@@ -98,11 +99,30 @@ body {
 		
 		@include large-display {
 			width: 250px;
+			height: 250px;
 		}
 }
 
 .figure img, .preview img {
 	max-width: 100%;
+}
+
+.thumb-1 {
+	background-image: url(../img/geh-thumb.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.title {
+	background-color: #fff;
+	opacity: 0;
+	max-width: 100%;
+	padding: 3.618rem;
+}
+
+.thumb-1:hover .title {
+	opacity: 0.75;
+	text-align: center;
 }
 
 .preview {

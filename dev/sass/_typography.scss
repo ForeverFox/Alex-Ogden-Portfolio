@@ -146,11 +146,18 @@ label .fa-bars {
 }
 
 .heading {
+	color: $skyblue;
+}
+
+.heading-2 {
+	color: $pink;
+}
+
+.heading, .heading-2 {
 	font-size: 1em;
 	font-weight: 400;
 	text-align: center;
 	padding:  1rem 0.5rem;
-	color: $skyblue;
 	margin: 0;
 	
 		@include tablet {
@@ -215,10 +222,10 @@ label .fa-bars {
 
 
 /*GLITCH EFFECT*/
-.glitch {
+.glitch, .glitch a:link, .glitch a:visited {
 	&:before,
-	&:after{
-	color: #000;
+	&:after {
+	color: #fff;
 	display: block;
 	content: 'Alex Ogden';
 	position: absolute;
@@ -231,7 +238,7 @@ label .fa-bars {
 	
 	&:after {
 	color: #f0f;
-	z-index: -2;
+	z-index: 0;
 	text-shadow: -1px 0 #0ff;
 	background: transparent;
 	}
@@ -248,7 +255,7 @@ label .fa-bars {
 }
 
 &:after {
-	animation: glitch 0.75s infinite linear;
+	animation: glitch 0.75s linear;
 }
 }
 }

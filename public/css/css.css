@@ -71,30 +71,47 @@ body {
     .content {
       width: 990px; } }
 
-.figure {
+.figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
+  position: relative;
   width: 280px;
-  height: auto;
+  height: 280px;
   margin: auto;
   padding: 8px; }
   @media screen and (min-width: 768px) {
-    .figure {
+    .figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
       width: 200px; } }
   @media screen and (min-width: 1024px) {
-    .figure {
+    .figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
       width: 150px;
       margin: 0; } }
   @media screen and (min-width: 1366px) {
-    .figure {
+    .figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
       width: 180px; } }
   @media screen and (min-width: 1680px) {
-    .figure {
+    .figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
       width: 200px; } }
   @media screen and (min-width: 1920px) {
-    .figure {
-      width: 250px; } }
+    .figure, .thumb-1, .thumb-2, .thumb-3, .thumb-4, .thumb-5, .thumb-6, .thumb-7, .thumb-8 {
+      width: 250px;
+      height: 250px; } }
 
 .figure img, .preview img {
   max-width: 100%; }
+
+.thumb-1 {
+  background-image: url(../img/geh-thumb.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.title {
+  background-color: #fff;
+  opacity: 0;
+  max-width: 100%;
+  padding: 3.618rem; }
+
+.thumb-1:hover .title {
+  opacity: 0.75;
+  text-align: center; }
 
 .preview {
   margin: 0 auto; }
@@ -452,21 +469,26 @@ label .fa-bars {
   color: #fff; }
 
 .heading {
+  color: #22a3e9; }
+
+.heading-2 {
+  color: #f848f7; }
+
+.heading, .heading-2 {
   font-size: 1em;
   font-weight: 400;
   text-align: center;
   padding: 1rem 0.5rem;
-  color: #22a3e9;
   margin: 0; }
   @media screen and (min-width: 768px) {
-    .heading {
+    .heading, .heading-2 {
       font-size: 1.25em;
       padding-left: 1rem; } }
   @media screen and (min-width: 1024px) {
-    .heading {
+    .heading, .heading-2 {
       font-size: 1em; } }
   @media screen and (min-width: 1920px) {
-    .heading {
+    .heading, .heading-2 {
       font-size: 1.618rem; } }
 
 .content-grid p {
@@ -504,8 +526,8 @@ label .fa-bars {
   text-decoration: underline; }
 
 /*GLITCH EFFECT*/
-.glitch:before, .glitch:after {
-  color: #000;
+.glitch:before, .glitch:after, .glitch a:link:before, .glitch a:link:after, .glitch a:visited:before, .glitch a:visited:after {
+  color: #fff;
   display: block;
   content: 'Alex Ogden';
   position: absolute;
@@ -514,19 +536,19 @@ label .fa-bars {
   height: 100%;
   width: 100%;
   cursor: pointer; }
-.glitch:after {
+.glitch:after, .glitch a:link:after, .glitch a:visited:after {
   color: #f0f;
-  z-index: -2;
+  z-index: 0;
   text-shadow: -1px 0 #0ff;
   background: transparent; }
-.glitch:before {
+.glitch:before, .glitch a:link:before, .glitch a:visited:before {
   color: #fff;
   z-index: 15;
   text-shadow: -1px 0 #d52b1e; }
-.glitch:hover:before {
+.glitch:hover:before, .glitch a:link:hover:before, .glitch a:visited:hover:before {
   animation: glitch 2s both infinite linear alternate-reverse; }
-.glitch:hover:after {
-  animation: glitch 0.75s infinite linear; }
+.glitch:hover:after, .glitch a:link:hover:after, .glitch a:visited:hover:after {
+  animation: glitch 0.75s linear; }
 
 @keyframes glitch {
   0% {
@@ -621,7 +643,7 @@ label .fa-bars {
       background-repeat: no-repeat; } }
 
 /*HEADING*/
-.heading {
+.heading, .heading-2 {
   position: absolute;
   top: 0;
   display: grid;
@@ -707,10 +729,7 @@ label .fa-bars {
       grid-row-start: 1; } }
   @media screen and (min-width: 1024px) {
     .content-grid {
-      grid-column-end: 8; } }
-  @media screen and (min-width: 1366px) {
-    .content-grid {
-      grid-column-end: 9; } }
+      grid-column-end: 10; } }
   @media screen and (min-width: 1680px) {
     .content-grid {
       grid-column-start: 3;
@@ -765,7 +784,8 @@ label .fa-bars {
       grid-row-start: 8; } }
   @media screen and (min-width: 768px) {
     .image-grid-works {
-      grid-row-start: 7; } }
+      grid-row-start: 7;
+      grid-column-end: 9; } }
   @media screen and (min-width: 1366px) {
     .image-grid-works {
       grid-row-start: 6; } }
@@ -930,5 +950,18 @@ label .fa-bars {
     .project-1:target, .project-2:target, .project-3:target, .project-4:target, .project-5:target, .project-6:target, .project-7:target, .project-8:target, .project-9:target {
       height: 100vh;
       animation: opacity 1.618s; } }
+
+/*GIF*/
+.gif {
+  display: none; }
+
+.gif:target {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/origami_fox.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /*# sourceMappingURL=css.css.map */

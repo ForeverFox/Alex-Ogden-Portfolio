@@ -61,7 +61,7 @@
 }
 
 /*HEADING*/
-.heading {
+.heading, .heading-2 {
 	position: absolute;
 	top: 0;
 	display: grid;
@@ -159,12 +159,9 @@
 		}
 		
 		@include laptop {
-			grid-column-end: 8;
+			grid-column-end: 10;
 		}
 		
-		@include desktop {
-			grid-column-end: 9;
-		}
 		
 		@include fullscreen {
 			grid-column-start: 3;
@@ -230,6 +227,7 @@
 		
 		@include tablet {
 			grid-row-start: 7;
+			grid-column-end: 9;
 		}
 
 		@include desktop {
