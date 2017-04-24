@@ -347,3 +347,38 @@
 .vertical-nav a {
 	color: #000;
 }
+
+/*PROJECT PAGE*/
+.project-side-a {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	border-bottom: 1px dashed #fff;
+	
+		@include laptop {
+			grid-column-start: 2;
+			grid-row-start: 1;
+			height: 100vh;
+			border-bottom: none;
+			border-right: 1px dashed #fff;
+		}
+		
+		@include desktop {
+			border-right: 1.618px dashed #fff;
+		}
+}
+
+.project-side-b {
+	display: grid;
+	position: relative;
+	grid-column-start: 1;grid-row-start: 3;
+	grid-row-end: 5;
+	
+		@include laptop {
+			grid-column-start: 3;
+			grid-column-end: 5;
+			grid-row-start: 1;
+			background-image: url(../img/side-b.jpg);
+			background-repeat: no-repeat;
+		}
+}

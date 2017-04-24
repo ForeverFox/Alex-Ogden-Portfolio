@@ -97,6 +97,10 @@ a {
 	color: $soft-black;
 }
 
+.content-grid a:hover {
+	color: $skyblue;
+}
+
 label .fa-bars {
 	font-size: 1.618em;
 	padding: 0.618rem 0;
@@ -184,42 +188,6 @@ label .fa-bars {
 		}
 }
 
-/*WORKS NAV*/
-.works-nav h3 {
-	font-size: 1em;
-	font-weight: 300;
-	letter-spacing: 0.33rem;
-	text-align: center;
-	
-		@include tablet {
-			font-size: 1.25rem;
-		}
-	
-		@include laptop {
-			font-size: 1rem;
-		}
-			
-		@include desktop {
-			font-size: 1.25rem;
-		}
-		
-		@include fullscreen {
-			font-size: 1.618rem;
-		}
-		
-		@include large-display {
-			font-size: 1.25rem;
-			letter-spacing: 0.5rem;
-		}
-}
-
-.works-nav a {
-	color: #000;
-}
-
-.works-nav a:hover {
-	color: #fff;
-}
 
 /*GLITCH EFFECT*/
 .glitch {

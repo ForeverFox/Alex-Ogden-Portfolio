@@ -18,6 +18,8 @@ body {
 	background-image: url(../img/about.jpg);
 	background-image: url(../img/works.jpg);
 	background-image: url(../img/connect.jpg);
+	background-image: url(../img/project-side-a.jpg);
+	background-image: url(../img/project-side-b.jpg);
 	width: 0px;
 	height: 0px;
 	display: inline; 
@@ -34,16 +36,70 @@ body {
 
 .content {
 	position: relative;
-	width: 800px;
-	margin: 0 auto;
-	padding-top: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	width: 320px;
+	padding-top: 200px;
+	
+		@include large-mobile {
+			width: 360px;
+			padding-top: 100px;
+		}
+		
+		@include tablet {
+			width: 768px;
+			flex-direction: row;
+		}
+		
+		@include laptop {
+			width: 512px;
+			padding-left: 20px;
+			padding-top: 180px;
+		}
+		
+		@include desktop {
+			width: 683px;
+			padding-left: 60px;
+		}
+		
+		@include fullscreen {
+			width: 840px;
+			padding-left: 80px;
+		}
+		
+		@include large-display {
+			width: 990px;
+		}
 }
 
 .figure {
-	width: 200px;
-	height: 200px;
-	float: left;
-	border: 1px dashed #fff;
+	width: 280px;
+	height: auto;
+	margin: auto;
+	padding: 8px;
+		
+		@include tablet {
+			width: 200px;
+		}
+	
+		@include laptop {
+			width: 150px;
+			margin: 0;
+		}
+		
+		@include desktop {
+			width: 180px;
+		}
+		
+		@include fullscreen {
+			width: 200px;
+		}
+		
+		@include large-display {
+			width: 250px;
+		}
 }
 
 .figure img {
@@ -67,145 +123,6 @@ body {
 	margin: 0 auto;
 	background-image: url(../img/wall-3.jpg);
 }
-
-
-/*PROJECTS*/
-.project-1 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-1:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-2 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-2:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-3 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-3:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-4 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-4:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-5 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-5:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-6 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-6:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-7 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-7:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.project-8 {
-	display: none;
-	visibility: hidden;
-}
-
-.project-8:target {
-	position: relative;
-	display: block;
-	visiblilty: visible;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	height: 100vh;
-	padding: 1.618rem;
-}
-
-.projects-content {
-	height: 120vh;
-	
-		@include large-mobile {
-			height: 100vh;
-		}
-}
-
 
 /*ITEMS*/
 .image-1 {
