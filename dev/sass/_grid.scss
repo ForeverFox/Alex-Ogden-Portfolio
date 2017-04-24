@@ -153,20 +153,17 @@
 	grid-row-end: 8;
 	
 		@include tablet {
-			grid-column-start: 3;
+			grid-column-start: 2;
 			grid-column-end: 9;
 			grid-row-start: 1;
 		}
 		
 		@include laptop {
-			grid-column-start: 2;
-			grid-column-end: 10;
-			grid-row-start: 2;
+			grid-column-end: 8;
 		}
 		
 		@include desktop {
-			grid-column-start: 2;
-			grid-column-end: 10;
+			grid-column-end: 9;
 		}
 		
 		@include fullscreen {
@@ -221,39 +218,29 @@
 	grid-area: image-grid;
 	position: relative;
 	width: 100%;
-	grid-column-start: 2;
+	grid-column-start: 1;
 	grid-column-end: auto;
  	grid-row-start: 8;
 	grid-row-end: auto;
 	z-index: 2;
 		
 		@include large-mobile {
-			grid-column-start: 2;
 			grid-row-start: 8;
 		}
 		
 		@include tablet {
-			grid-column-start: 4;
-			grid-row-start: 7;
-		}
-		
-		@include laptop {
-			grid-column-start: 4;
 			grid-row-start: 7;
 		}
 
 		@include desktop {
-			grid-column-start: 5;
 			grid-row-start: 6;
 		}
 		
 		@include fullscreen {
-			grid-column-start: 5;
-			grid-row-start: 6;
+			grid-row-start: 7;
 		}
 		
 		@include large-display {
-			grid-column-start: 4;
 			grid-row-start: 6;
 		}
 }
@@ -262,39 +249,34 @@
 	grid-area: image-grid;
 	position: relative;
 	width: 100%;
-	grid-column-start: 2;
+	grid-column-start: 1;
 	grid-column-end: auto;
  	grid-row-start: 6;
 	grid-row-end: auto;
 	z-index: 2;
 		
-		@include large-mobile {
+		@include tablet {
 			grid-column-start: 2;
 			grid-row-start: 6;
 		}
 		
-		@include tablet {
-			grid-column-start: 5;
-			grid-row-start: 5;
-		}
-		
 		@include laptop {
-			grid-column-start: 4;
-			grid-row-start: 6;
+			grid-column-start: 1;
+			grid-row-start: 5;
 		}
 
 		@include desktop {
-			grid-column-start: 5;
+			grid-column-start: 2;
 			grid-row-start: 5;
 		}
 		
 		@include fullscreen {
-			grid-column-start: 4;
+			grid-column-start: 2;
 			grid-row-start: 5;
 		}
 		
 		@include large-display {
-			grid-column-start: 4;
+			grid-column-start: 3;
 			grid-row-start: 5;
 		}
 }
@@ -305,15 +287,10 @@
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	padding: 1.618rem;
 	z-index: 3;
 	grid-column-start: 2;
 	grid-column-end: 12;
 	grid-row-start: 1;
-	
-		@include large-mobile {
-			grid-column-start: 2;
-		}
 		
 		@include tablet {
 			grid-column-start: 3;

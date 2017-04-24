@@ -158,63 +158,60 @@ body {
 }
 
 .image-2 {
-	width: 260px;
+	width: 320px;
 	height: auto;
 		
 		@include large-mobile {
-			width: 300px;
+			width: 360px;
 		}
 	
 		@include tablet {
-			width: 450px;
+			width: 600px;
 		}
 		
 		@include laptop {
-			width: 300px;
+			width: 440px;
 		}
 		
 		@include desktop {
-			width: 400px;
+			width: 550px;
 		}
 		
 		@include fullscreen {
-			width: 500px;
-			margin-top: 4rem;
-			margin-left: -1rem;
+			width: 640px;
 		}
 		
 		@include large-display {
-			width: 560px;
-			margin: 0;
+			width: 800px;
 		}
 }
 
 .image-3 {
-	width: 260px;
+	width: 320px;
 	height: auto;
 	
 		@include large-mobile {
-			width: 300px;
+			width: 360px;
 		}
 	
 		@include tablet {
-			width: 420px;
+			width: 660px;
 		}
 		
 		@include laptop {
-			width: 300px;
+			width: 500px;
 		}
 		
 		@include desktop {
-			width: 350px;
+			width: 600px;
 		}
 		
 		@include fullscreen {
-			width: 550px;
+			width: 720px;
 		}
 		
 		@include large-display {
-			width: 600px;
+			width: 800px;
 		}
 }
 
