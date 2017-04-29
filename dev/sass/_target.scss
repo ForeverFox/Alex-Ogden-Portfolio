@@ -2,11 +2,12 @@
 	display: none;
 }
 
-.about-content:target, .works-content:target, .connect-content:target  {
+.about-content:target, .connect-content:target  {
+	display: grid;
 	position: relative;
 	width: 100%;
-	display: grid;
 	background-color: $soft-white;
+	padding: 1.618rem;
 	
 		@include laptop {
 			animation: opacity 2s;
@@ -24,8 +25,10 @@
 }
 
 .works-content:target {
+	display: block;
 	background-image: url(../img/works.jpg);
 	background-size: cover;
+	overflow: auto;
 		
 		@include tablet {
 			height: 100vh;

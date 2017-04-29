@@ -94,7 +94,7 @@ ul {
 
 li {
 	font-weight: 300;
-	line-height: 2; 
+	line-height: 2;
 }
 
 a {
@@ -136,7 +136,7 @@ label .fa-bars {
 	color: $aqua;
 }
 
-.side-a h1 {
+.side-a h1, .section-header h1 {
 	width: 100%;
 	text-align: center;
 }
@@ -145,7 +145,11 @@ label .fa-bars {
 	color: #fff;
 }
 
-.heading {
+.mobile-title {
+	padding-top: 20px;
+}
+
+.heading, .mobile-title {
 	color: $skyblue;
 }
 
@@ -172,6 +176,10 @@ label .fa-bars {
 		@include large-display {
 			font-size: 1.618rem;
 		}
+}
+
+.container p {
+	font-size: 1.25rem;
 }
 
 .content-grid p {
@@ -219,7 +227,10 @@ label .fa-bars {
 	text-decoration: underline;
 }
 
-
+.footer a:link, .footer a:visited {
+	color: $soft-white;
+	padding-right: 1rem;
+}
 
 /*GLITCH EFFECT*/
 .glitch, .glitch a:link, .glitch a:visited {

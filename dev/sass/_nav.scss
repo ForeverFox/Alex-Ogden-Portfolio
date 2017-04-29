@@ -1,4 +1,33 @@
 /*MOBILE NAV */
+.mobile-nav {
+	display: block;
+	width: 100%;
+	background-color: $soft-white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+	
+		@include laptop {
+			display: none;
+		}
+}
+
+.mobile-nav ul {
+	text-align: center;
+}
+
+.mobile-nav li {
+	display: inline;
+	padding: 0.618rem;
+	font-weight: 500;
+		
+		@include tablet {
+			font-size: 1.25rem;
+			padding: 2.618rem;
+		}
+}
+
 .menu-controller-checkbox { display: none; }
 
 .slide-left {
@@ -11,52 +40,50 @@
 }
 
 .slide-left {
-	position: relative;
-		
+	display: block;
+				
+		@include laptop {
+			display: none;
+		}	
+	
 		label {
-		  color: $skyblue;
-		  display: block;
-		  font-size: 1.25rem;
-		  position: absolute;
-		  left: 0.5rem;
-		  top: 0;
-		  text-align: right;
-		  width: 32px;
-		  height: 32px;		  
+			color: $skyblue;
+			display: inline-block;
+			font-size: 1.25rem;
+			padding: 0.5rem 0 0 0.5rem;
+			width: 2rem;
+			margin: 0;
 		}
-			
-			@include laptop {
-				display: none;
-				visibility: hidden;
-			}	
 }
 
 .mobile-menu {
     background-image: url(../img/nav.jpg);
-    height: 180px;
+    height: 80px;
     left: -100%;
-    line-height: 2.618rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 	z-index: 1000;
-	text-align: center;
 	
 		@include tablet {
-			height: 40px;
-			text-align: center;
+			height: 64px;
 			background-color: #fff;
 		}
 	
 	li {
 		font-family: "Poppins", sans-serif;
 		font-weight: 500;
-		font-size: 1.25rem;
-		display: block;
+		font-size: 1rem;
+		display: inline-block;
+		line-height: 2;
+		padding: 0 0.4rem;
+			
+			@include large-mobile {
+				padding: 0 0.618rem;
+			}
 		
 			@include tablet {
-				display: inline-block;
-				padding: 0 1.618rem;
+				padding: 0 1.618rem 0 4rem;
 			}
 	}
 }
@@ -68,18 +95,7 @@
 
 
 
-/*LAPTOP+ NAV*/
-.vertical-nav {
-	display: none;
-	visibility: hidden;
-	
-	@include laptop {
-		display: block;
-		visibility: visible;
-	}
-}
-
-
+/* LAPTOP+ NAV */
 .vertical-nav-position {
 	width: 100%;
 	position: absolute;
@@ -97,7 +113,10 @@
 
 /*SOCIAL NAVIGATION*/
 .social-nav {
-	z-index: 100;
+	
+		@include laptop {
+			z-index: 100;
+		}
 }
 
 .social-nav ul {
