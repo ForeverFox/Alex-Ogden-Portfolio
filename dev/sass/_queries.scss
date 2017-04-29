@@ -27,3 +27,9 @@
 		@content;
 	}
 }
+
+@mixin large-display {
+	@media #{$large-display-width} {
+		@content;
+	}
+}

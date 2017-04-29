@@ -6,13 +6,20 @@ html {
 body {
 	position: relative;
 	max-width: 100%;
-	color: $red;
+	color: $soft-black;
+	background-color: $soft-black;
+	background-image: url(../img/side-a.jpg);
 }
 
 /*IMAGE PRELOADING*/
 #preload {
 	background-image: url(../img/side-a.jpg);
 	background-image: url(../img/side-b.jpg);
+	background-image: url(../img/about.jpg);
+	background-image: url(../img/works.jpg);
+	background-image: url(../img/connect.jpg);
+	background-image: url(../img/project-side-a.jpg);
+	background-image: url(../img/project-side-b.jpg);
 	width: 0px;
 	height: 0px;
 	display: inline; 
@@ -27,14 +34,122 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.content {
+.container {
 	position: relative;
+	margin: 0 auto;
 	width: 100%;
-	padding: 1em;
+	padding: 1rem;
 }
 
-.container {
+/* .content {
+	position: relative;
+	width: 320px;
+	display: flex;
+	flex-flow: row wrap;
+	padding-top: 200px;
+	text-align: center;
 	
+		@include large-mobile {
+			width: 360px;
+			padding-top: 100px;
+		}
+		
+		@include tablet {
+			width: 768px;
+			padding: 0;
+		}
+		
+		@include laptop {
+			width: 512px;
+			padding-left: 20px;
+			padding-top: 180px;
+		}
+		
+		@include desktop {
+			width: 683px;
+			padding-left: 60px;
+		}
+		
+		@include fullscreen {
+			width: 840px;
+			padding-left: 80px;
+		}
+		
+		@include large-display {
+			width: 990px;
+		}
+} */
+
+.content-works {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	
+		@include tablet {
+			width: 100%;
+			padding: 8px;
+		}
+		
+		@include laptop {
+			width: 80%;
+			padding: 12px;
+		}
+		
+		@include fullscreen {
+			width: 100%;
+			margin-left: 1rem;
+			padding: 36px;
+		}
+		
+		@include large-display {
+			margin-left: 4.618rem;
+		}
+}
+
+.figure {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin:  0 auto;
+	padding: 8px;
+	
+		@include tablet {
+			float: left;
+		}
+		
+		@include laptop {
+			margin-left: 4.618rem;
+		}
+		
+		@include desktop {
+			margin-left: 0;
+		}
+}
+
+.figure img, .preview img {
+	max-width: 100%;
+}
+
+.title {
+	background-color: #fff;
+	opacity: 0;
+	width: 250px;
+	height: 250px;
+	padding: 1.618rem;
+}
+
+.figure:hover .title {
+	opacity: 0.75;
+	text-align: center;
+}
+
+.preview {
+	margin: 0 auto;
+}
+
+.project-content {
+	width: 90%;
+	margin: 0 auto;
 }
 
 /*HEADER*/
@@ -45,37 +160,196 @@ body {
 	text-align: center;
 }
 
-/*MOBILE WRAPPER*/
-.wrapper {
-	min-width: 100%;
-	min-height: 100%;
+/*SECTIONS*/
+.section-header {
+	display: block;
 	position: relative;
-	top: 0;
-	bottom: 100%;
-	left: 0;
-	z-index: 1;
-	background-color: #000;
+	width: 100%;
+	height: 75vh;
+	background-image: url(../img/side-a.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	
+		@include tablet {
+			height: 66vh;
+		}
+	
+		@include laptop {
+			display: none;
+		}
 }
 
-
-/*SECTIONS*/
-.section {
+.section-mobile-about, .section-mobile-works, .section-mobile-connect {
+	display: block;	
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	background-image: url(../img/wall-3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+			@include laptop {
+			display: none;
+		}
+}
+
+.section-mobile-about {
+	background-image: url(../img/about.jpg);
+	padding-bottom: 220px;
+	
+		@include tablet {
+			padding-bottom: 260px;
+		}
+}
+
+.section-mobile-works {
+	background-image: url(../img/works.jpg);
+}
+
+.section-mobile-connect {
+	background-image: url(../img/connect.jpg);
+	padding-bottom: 220px;
 }
 
 .footer {
-	clear: both;
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	height: 80px;
-	text-align: center;
-	color: #fff;
+	color: $soft-white;
+	padding: 1rem;
+	
+		@include laptop {
+			display: none;
+		}
 }
 
-.footer p {
-	padding: 1em;
+/*ITEMS*/
+.image-1 {
+	width: 200px;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	
+		@include tablet {
+			width: 280px;
+		}
+		
+		@include laptop {
+			width: 300px;
+			position: relative;
+		}
+		
+		@include desktop {
+			width: 280px;
+		}
+		
+		@include fullscreen {
+			width: 400px;
+		}
+		
+		@include large-display {
+			width: 420px;
+		}
 }
+
+.image-2 {
+	width: 320px;
+	height: auto;
+	margin-left: -20px;
+		
+		@include large-mobile {
+			width: 360px;
+		}
+	
+		@include tablet {
+			width: 600px;
+			margin-left: 0;
+		}
+		
+		@include laptop {
+			width: 440px;
+			margin-left: -40px;
+		}
+		
+		@include desktop {
+			width: 550px;
+		}
+		
+		@include fullscreen {
+			width: 640px;
+		}
+		
+		@include large-display {
+			width: 800px;
+		}
+}
+
+.image-3 {
+	width: 320px;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	
+		@include large-mobile {
+			width: 360px;
+		}
+	
+		@include tablet {
+			width: 660px;		
+		}
+		
+		@include laptop {
+			width: 500px;
+			position: relative;
+		}
+		
+		@include desktop {
+			width: 600px;
+		}
+		
+		@include fullscreen {
+			width: 720px;
+		}
+		
+		@include large-display {
+			width: 800px;
+		}
+}
+
+.image-1 img, .image-2 img, .image-3 img {
+	max-width: 100%;
+}
+
+.animation {
+	width: 200px;
+	
+		@include tablet {
+			width: 300px;
+		}
+	
+		@include large-display {
+			width: 400px;
+		}
+}
+
+.projects {
+	float: right;
+}
+
+.projects:after {
+	clear: right;
+}
+
+
+/*ANIMATION*/
+@keyframes opacity {
+	from {
+		opacity: 0;
+	} 
+	
+	to {
+		opacity: 1;
+	}
+}
+
+
