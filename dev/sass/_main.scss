@@ -41,45 +41,6 @@ body {
 	padding: 1rem;
 }
 
-/* .content {
-	position: relative;
-	width: 320px;
-	display: flex;
-	flex-flow: row wrap;
-	padding-top: 200px;
-	text-align: center;
-	
-		@include large-mobile {
-			width: 360px;
-			padding-top: 100px;
-		}
-		
-		@include tablet {
-			width: 768px;
-			padding: 0;
-		}
-		
-		@include laptop {
-			width: 512px;
-			padding-left: 20px;
-			padding-top: 180px;
-		}
-		
-		@include desktop {
-			width: 683px;
-			padding-left: 60px;
-		}
-		
-		@include fullscreen {
-			width: 840px;
-			padding-left: 80px;
-		}
-		
-		@include large-display {
-			width: 990px;
-		}
-} */
-
 .content-works {
 	display: block;
 	width: 80%;
@@ -104,6 +65,14 @@ body {
 		@include large-display {
 			margin-left: 4.618rem;
 		}
+}
+
+.works-wrapper {
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
 }
 
 .figure {
@@ -152,6 +121,14 @@ body {
 	margin: 0 auto;
 }
 
+.illustration {
+	float: right;
+}
+
+.illustration-mobile {
+	padding-top: 5rem;
+}
+
 /*HEADER*/
 .header {
 	position: relative;
@@ -165,15 +142,16 @@ body {
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 75vh;
+	height: 320px;
 	background-image: url(../img/side-a.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	border-bottom: 1px dashed $soft-white;
 	
 		@include tablet {
-			height: 66vh;
+			height: 480px;
 		}
 	
 		@include laptop {
@@ -188,6 +166,8 @@ body {
 	margin: 0 auto;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-bottom: 1px dashed $soft-black;
 	
 			@include laptop {
 			display: none;
@@ -196,11 +176,6 @@ body {
 
 .section-mobile-about {
 	background-image: url(../img/about.jpg);
-	padding-bottom: 220px;
-	
-		@include tablet {
-			padding-bottom: 260px;
-		}
 }
 
 .section-mobile-works {
@@ -209,7 +184,6 @@ body {
 
 .section-mobile-connect {
 	background-image: url(../img/connect.jpg);
-	padding-bottom: 220px;
 }
 
 .footer {
@@ -223,23 +197,16 @@ body {
 
 /*ITEMS*/
 .image-1 {
-	width: 200px;
+	width: 220px;
 	height: auto;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	float: right;
+	
+		@include mobile-to-tablet {
+			width: 260px;
+		}
 	
 		@include tablet {
-			width: 280px;
-		}
-		
-		@include laptop {
-			width: 300px;
-			position: relative;
-		}
-		
-		@include desktop {
-			width: 280px;
+			width: 320px;
 		}
 		
 		@include fullscreen {
@@ -254,20 +221,22 @@ body {
 .image-2 {
 	width: 320px;
 	height: auto;
-	margin-left: -20px;
 		
 		@include large-mobile {
 			width: 360px;
 		}
-	
+		
+		@include mobile-to-tablet {
+			width: 480px;
+		}
+		
 		@include tablet {
 			width: 600px;
-			margin-left: 0;
 		}
 		
 		@include laptop {
 			width: 440px;
-			margin-left: -40px;
+			margin-left: -1.618em;
 		}
 		
 		@include desktop {
@@ -284,14 +253,16 @@ body {
 }
 
 .image-3 {
-	width: 320px;
+	width: 300px;
 	height: auto;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	float: right;
 	
 		@include large-mobile {
-			width: 360px;
+			width: 340px;
+		}
+		
+		@include mobile-to-tablet {
+			width: 440px;
 		}
 	
 		@include tablet {
@@ -299,12 +270,12 @@ body {
 		}
 		
 		@include laptop {
-			width: 500px;
-			position: relative;
+			width: 435px;
 		}
 		
 		@include desktop {
-			width: 600px;
+			width: 550px;
+			margin-top: -75px;
 		}
 		
 		@include fullscreen {
@@ -339,7 +310,6 @@ body {
 .projects:after {
 	clear: right;
 }
-
 
 /*ANIMATION*/
 @keyframes opacity {

@@ -2,8 +2,8 @@
 	display: none;
 }
 
-.about-content:target, .connect-content:target  {
-	display: grid;
+.about-content:target, .works-content:target, .connect-content:target  {
+	display: block;
 	position: relative;
 	width: 100%;
 	background-color: $soft-white;
@@ -17,11 +17,8 @@
 .about-content:target {
 	background-image: url(../img/about.jpg);
 	background-size: cover;
-	height: 120vh;
-	
-		@include large-mobile {
-			height: 100vh;
-		}
+	height: 100vh;
+	overflow: auto;
 }
 
 .works-content:target {
@@ -39,14 +36,6 @@
 	background-image: url(../img/connect.jpg);
 	background-size: cover;
 	height: 100vh;
-	
-		@include large-mobile {
-			height: 120vh;
-		}
-		
-		@include tablet {
-			height: 100vh;
-		}
 }
 
 /*PROJECTS*/

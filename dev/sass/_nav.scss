@@ -2,7 +2,8 @@
 .mobile-nav {
 	display: block;
 	width: 100%;
-	background-color: $soft-white;
+	background-color: $skyblue;
+	border-bottom: 1px dashed $soft-white;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,18 +16,33 @@
 
 .mobile-nav ul {
 	text-align: center;
+	height: 40px;
 }
 
 .mobile-nav li {
-	display: inline;
-	padding: 0.618rem;
+	display: inline-block;
+	padding: 0.25rem 0.618rem;
 	font-weight: 500;
+	
+		@include large-mobile {
+			padding: 0.25rem 1rem;
+		}
+		
+		@include mobile-to-tablet {
+			font-size: 1.15rem;
+			padding: 0.15rem 1.618rem;
+		}
 		
 		@include tablet {
 			font-size: 1.25rem;
-			padding: 2.618rem;
+			padding: 0 2rem;
 		}
 }
+
+.mobile-nav li a:link, .mobile-nav li a:visited {
+	color: $soft-white;
+}
+
 
 .menu-controller-checkbox { display: none; }
 
@@ -113,29 +129,14 @@
 
 /*SOCIAL NAVIGATION*/
 .social-nav {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	
 		@include laptop {
 			z-index: 100;
 		}
-}
-
-.social-nav ul {
-	
-	@include large-mobile {
-		margin-left: 1rem;
-	}
-	
-	@include tablet {
-		margin: 0;
-	}
-	
-	@include laptop {
-		margin-left: 0.618rem;
-	}
-	
-	@include large-display {
-		margin-left: 0;
-	}
 }
 
 .social-nav li {
@@ -146,6 +147,10 @@
 	@include large-mobile {
 		padding: 1.618rem;
 	}
+	
+	@include mobile-to-tablet {
+		padding: 2.618rem;
+	}
   
 	@include tablet {
 		font-size: 2.618rem;
@@ -154,22 +159,22 @@
 
 	@include laptop {
 		font-size: 1.618rem;
-		padding: 2rem;
+		padding: 2rem 2rem 0 2rem;
 	}
 	
 	@include desktop {
 		font-size: 2rem;
-		padding: 3rem;
+		padding: 3rem 3rem 0 3rem;
 	}
 	
 	@include fullscreen {
 		font-size: 2.5rem;
-		padding: 4rem;
+		padding: 4rem 4rem 0 4rem;
 	}
 	
 	@include large-display {
 		font-size: 2.618rem;
-		padding: 4.618rem;
+		padding: 4.618rem 4.618rem 0 4.618rem;
 	}
 }
 

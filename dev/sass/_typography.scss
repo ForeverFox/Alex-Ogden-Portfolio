@@ -145,86 +145,45 @@ label .fa-bars {
 	color: #fff;
 }
 
-.mobile-title {
-	padding-top: 20px;
+.section-title {
+	padding-top: 2.618rem;
 }
 
-.heading, .mobile-title {
+.section-title {
 	color: $skyblue;
 }
 
-.heading-2 {
-	color: $pink;
-}
-
-.heading, .heading-2 {
-	font-size: 1em;
-	font-weight: 400;
-	text-align: center;
-	padding:  1rem 0.5rem;
-	margin: 0;
-	
-		@include tablet {
-			font-size: 1.25em;
-			padding-left: 1rem;
-		}
-		
-		@include laptop {
-			font-size: 1em;
-		}
-		
-		@include large-display {
-			font-size: 1.618rem;
-		}
-}
-
 .container p {
-	font-size: 1.25rem;
-}
-
-.content-grid p {
-	font-size: 1.15em;
-	padding: 1rem 0 0 1.618rem;	
-
+	font-size: 1.05rem;
+	padding: 0.618rem 0;
 		
-		@include tablet {
-			font-size: 1.25rem;
+		@include mobile-to-tablet {
+			max-width: 80%;
+			margin: 0 auto;
 		}
 		
+		@include tablet {
+			max-width: 66.666667%;
+		}
+	
 		@include laptop {
+			max-width: 80%;
 			font-size: 1rem;
 		}
 		
-		@include desktop {
-			font-size: 1.15rem;
-		}
-		
 		@include fullscreen {
-			font-size: 1.333rem;
+			max-width: 66.666667%;
+			font-size: 1.0625rem;
 		}
 		
 		@include large-display {
-			font-size: 1.25rem;
+			font-size: 1.125rem;
+			max-width: 66.666667%;
 		}
 }
 
-.project-content h2 {
-	padding: 2.618rem 0 0 0;
-}
-
-.project-content p {
-	padding: 0.618rem 0;
-	margin: 0;
-	width: 100%;
-}
-
-.project-content p a:link, .project-content p a:visited {
-	color: $orange;
-	font-weight: 500;
-}
-
-.project-content a:hover {
-	text-decoration: underline;
+.container figure {
+	max-width: 100%;
 }
 
 .footer a:link, .footer a:visited {
