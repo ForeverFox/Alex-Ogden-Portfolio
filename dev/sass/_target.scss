@@ -7,7 +7,7 @@
 	position: relative;
 	width: 100%;
 	background-color: $soft-white;
-	padding: 1.618rem;
+	padding: 1.618rem 1.618rem 0 2.618rem;
 	
 		@include laptop {
 			animation: opacity 2s;
@@ -29,7 +29,7 @@
 		
 		@include tablet {
 			height: 100vh;
-		}
+		}	
 }
 
 .connect-content:target {

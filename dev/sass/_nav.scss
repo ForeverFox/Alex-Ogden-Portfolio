@@ -159,12 +159,12 @@
 
 	@include laptop {
 		font-size: 1.618rem;
-		padding: 2rem 2rem 0 2rem;
+		padding: 2.618rem 4.25rem 0 1rem;
 	}
 	
 	@include desktop {
 		font-size: 2rem;
-		padding: 3rem 3rem 0 3rem;
+		padding: 2rem 3rem 0 3rem;
 	}
 	
 	@include fullscreen {
@@ -174,7 +174,7 @@
 	
 	@include large-display {
 		font-size: 2.618rem;
-		padding: 4.618rem 4.618rem 0 4.618rem;
+		padding: 4.618rem 6rem 0 4.618rem;
 	}
 }
 
