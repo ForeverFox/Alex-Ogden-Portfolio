@@ -39,23 +39,9 @@
 }
 
 /*PROJECTS*/
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8, .project-9 {
-	display: none;
-}
 
-.project-1:target, .project-2:target, .project-3:target, .project-4:target, .project-5:target, .project-6:target, .project-7:target, .project-8:target, .project-9:target  {
-	position: relative;
-	display: block;
-	width: 100%;
-	overflow: auto;
-	background-image: url(../img/project-side-b.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-		@include laptop {
-			height: 100vh;
-			animation: opacity 1.618s;
-		}
+#top:target  {
+	animation: opacity 4.235s;
 }
 
 /*GIF*/

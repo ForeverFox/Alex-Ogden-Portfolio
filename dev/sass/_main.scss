@@ -34,7 +34,7 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.container, .container-works {
+.container, .container-works, .container-mobile {
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
@@ -86,12 +86,8 @@ body {
 		}
 }
 
-.works-wrapper {
-	position: relative;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1rem;
+.container-mobile {
+	border-bottom: 1px dashed $soft-black;
 }
 
 /* Works Gallery Hover Effect */
@@ -175,17 +171,12 @@ body {
 	margin: 0 auto;
 }
 
-.project-content {
-	width: 90%;
-	margin: 0 auto;
-}
-
 .illustration {
 	float: right;
 }
 
 .illustration-mobile {
-	padding-top: 5rem;
+	padding-top: 2.618rem;
 }
 
 /*HEADER*/
@@ -231,12 +222,8 @@ body {
 		}
 }
 
-.section-mobile-about {
-	background-image: url(../img/about.jpg);
-}
-
-.section-mobile-works {
-	background-image: url(../img/works.jpg);
+.section-mobile-about, .section-mobile-works {
+	background-color: $off-white;
 }
 
 .section-mobile-connect {
@@ -298,12 +285,12 @@ body {
 		
 		@include desktop {
 			width: 550px;
-			margin-left: -4rem;
+			margin-left: -3rem;
 		}
 		
 		@include fullscreen {
 			width: 640px;
-			margin-left: -1.5rem;
+			margin-left: -2.5rem;
 		}
 		
 		@include large-display {
@@ -335,7 +322,6 @@ body {
 		
 		@include desktop {
 			width: 550px;
-			margin-top: -75px;
 		}
 		
 		@include fullscreen {
@@ -363,18 +349,6 @@ body {
 		}
 }
 
-.projects {
-	float: right;
-	display: block;
-	
-	@include tablet {
-		display: none;
-	}
-}
-
-.projects:after {
-	clear: right;
-}
 
 /*ANIMATION*/
 @keyframes opacity {

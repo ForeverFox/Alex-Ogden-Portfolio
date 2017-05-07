@@ -158,6 +158,8 @@ label .fa-bars {
 
 .section-title {
 	color: $skyblue;
+	letter-spacing: 0.5rem;
+	font-weight: 400;
 }
 
 .container p {
@@ -191,6 +193,64 @@ label .fa-bars {
 
 .container figure {
 	max-width: 100%;
+}
+
+.container-projects p {
+	font-size: 1.05rem;
+	width: 80%;
+		
+		@include mobile-to-tablet {
+			margin: 0 auto;
+		}
+	
+		@include laptop {
+			font-size: 1rem;
+		}
+		
+		@include fullscreen {
+			font-size: 1.0625rem;
+		}
+		
+		@include large-display {
+			font-size: 1.125rem;
+			width: 100%;
+			margin: 0;
+		}
+}
+
+.projects-h1 {
+	font-size: 2rem;
+	color: $soft-black;
+	padding: 1.618rem 1rem;
+	line-height: 1.4;
+	
+		@include laptop {
+			font-size: 1.618rem;
+			letter-spacing: 0.7rem;
+		}
+}
+
+.projects-h2 {
+	font-size: 1.75rem;
+	font-weight: 400;
+	padding: 2.618rem 0 0 0;
+	letter-spacing: 0.5rem;
+}
+
+.screenshot-h3, .screenshot-mobile-h3 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin: 2.618rem 0 0.618rem 0;
+}
+
+.screenshot-h3 {
+	color: $soft-white;
+	letter-spacing: 0.5rem;
+}
+
+.screenshot-mobile-h3 {
+	color: $soft-black;
+	letter-spacing: 0.25rem;
 }
 
 .footer a:link, .footer a:visited {
