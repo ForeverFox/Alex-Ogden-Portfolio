@@ -1,16 +1,14 @@
 .container-projects {
-	background-image: url(../img/projects.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.container-projects {
 	position: fixed;
 	margin: 0 auto;
 	width: 40%;
 	height: 100vh;
 	padding: 1em;
-	z-index: 4000;
+	z-index: 3000;
+	background-image: url(../img/projects.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
 }
 
 .project-section {

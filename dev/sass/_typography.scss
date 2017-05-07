@@ -191,6 +191,22 @@ label .fa-bars {
 		}
 }
 
+.container-projects a:link, .container-mobile a:link {
+	color: $skyblue;
+}
+
+.container-projects a:visited, .container-mobile a:visited {
+	color: $darkblue;
+}
+
+.container-projects a:hover, .container-mobile a:hover {
+	color: $aqua;
+}
+
+.container-projects a:active, .container-mobile a:active, .container-projects a:focus, .container-mobile a:focus {
+	color: $pink;
+}
+
 .container figure {
 	max-width: 100%;
 }

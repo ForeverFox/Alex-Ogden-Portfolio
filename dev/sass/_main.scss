@@ -1,6 +1,7 @@
 html {
 	font-size: 16px;
-	line-height: 1.4; 
+	line-height: 1.4;
+	overflow-x: hidden	
 }
 
 body {
@@ -130,7 +131,7 @@ body {
 		height: 100%;
 		top: 0;
 		left: 50%;
-		transfrom: translateX(-50%);
+		transform: translateX(-50%);
 		background-color: transparent;
 		opacity: 0;
 		}
